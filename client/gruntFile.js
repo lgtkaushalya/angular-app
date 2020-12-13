@@ -96,6 +96,18 @@ module.exports = function (grunt) {
         src:['vendor/angular/angular.js', 'vendor/angular/angular-route.js'],
         dest: '<%= distdir %>/angular.js'
       },
+      ngreact: {
+        src:['vendor/ngReact/ngReact.js'],
+        dest: '<%= distdir %>/ngReact.js'
+      },
+      react: {
+        src:['vendor/react/react.min.js'],
+        dest: '<%= distdir %>/react.min.js'
+      },
+      reactdom: {
+        src:['vendor/react-dom/react-dom.min.js'],
+        dest: '<%= distdir %>/react-dom.min.js'
+      },
       mongo: {
         src:['vendor/mongolab/*.js'],
         dest: '<%= distdir %>/mongolab.js'

@@ -1,0 +1,28 @@
+{
+    "parser": "babel-eslint",
+    "extends": [],
+    "plugins": ["angular", "react","ng-react-copilot", "html"],
+    "rules": {
+        "ng-react-copilot/ng-directive-template-naming": "error",
+        "ng-react-copilot/isolate-scope": "error",
+        "ng-react-copilot/replace-angular-inbuilt-directives": "error",
+        "ng-react-copilot/replace-angular-scope-references-in-react-components": "error",
+        //"ng-react-copilot/extract-directive-and-component-information":  "error",
+        "ng-react-copilot/replace-directive-with-react-component": "error",
+        "ng-react-copilot/missing-required-props-in-components": "error",
+        "angular/directive-restrict": ["error", {"restrict": "E", "explicit": "always"}],
+        "ng-react-copilot/no-inlilne-template": ["error",{"allowSimple": false}],
+        "react/prop-types": "error"
+    },
+    "settings": {
+        "react": {
+            // Fragment to use (may be a property of <pragma>), default to "Fragment"
+            "version": "16.0"
+            // React version. "detect" automatically picks the version you have installed.
+            // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+            // default to latest and warns if missing
+            // It will default to "detect" in the future
+
+        }
+    }
+}

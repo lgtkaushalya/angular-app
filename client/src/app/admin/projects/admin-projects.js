@@ -48,6 +48,30 @@ angular.module('admin-projects', [
     i18nNotifications.pushForCurrentRoute('crud.project.save.error', 'error');
   };
 
+  $scope.canSaveWrap = function() {
+    return $scope.canSave();
+  };
+
+  $scope.saveWrap = function() {
+    return $scope.save();
+  };
+
+  $scope.revertChangesWrap = function() {
+    return $scope.revertChanges();
+  };
+
+  $scope.canRevertWrap = function() {
+    return $scope.canRevert();
+  };
+
+  $scope.removeWrap = function() {
+    return $scope.remove();
+  };
+
+  $scope.canRemoveWrap = function() {
+    return $scope.canRemove();
+  };
+
 }])
 
 .controller('TeamMembersController', ['$scope', function($scope) {

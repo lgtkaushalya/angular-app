@@ -7,7 +7,7 @@ angular.module('directives.crud.edit', [])
     // We ask this directive to create a new child scope so that when we add helper methods to the scope
     // it doesn't make a mess of the parent scope.
     // - Be aware that if you write to the scope from within the form then you must remember that there is a child scope at the point
-    scope: true,
+    //scope: true,
     // We need access to a form so we require a FormController from this element or a parent element
     require: '^form',
     // This directive can only appear as an attribute
