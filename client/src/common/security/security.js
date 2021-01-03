@@ -19,8 +19,8 @@ angular.module('security.service', [
     if ( loginDialog ) {
       throw new Error('Trying to open a dialog that is already open!');
     }
-    loginDialog = $dialog.dialog();
-    loginDialog.open('security/login/form.tpl.html', 'LoginFormController').then(onLoginDialogClose);
+    loginDialog = $dialog.dialog({template: '<form-tpl-component></form-tpl-component>'});
+    loginDialog.open().then(onLoginDialogClose);
   }
   function closeLoginDialog(success) {
     if (loginDialog) {

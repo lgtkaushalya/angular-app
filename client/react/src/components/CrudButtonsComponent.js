@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 
 class CrudButtonsComponent extends Component {
   render() {
-      console.log(this.props)
     return (
         <div>
           <button type="button" className="btn btn-primary save" disabled={!this.props.canSave()} onClick={() => this.props.save()}>Save</button>
